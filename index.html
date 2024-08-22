@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div
+        class="navbar bg-base-100 flex justify-between items-center align-middle"
+      >
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl justify-between font-extrabold">
+            <span class="bg-primary rounded-full p-2 px-3"
+              ><i class="fa-solid fa-arrow-right -rotate-45"></i
+            ></span>
+            Rinterio
+          </a>
+        </div>
+        <div class="w-96">
+          <div class="navbar-center hidden lg:flex w-full absolute">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-bold"><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+            <div class="flex gap-1 py-1">
+              <button class="btn p-2 px-4 rounded-full">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="btn p-2 px-4 rounded-full">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+            <div class="navbar-end px-2">
+              <a class="btn bg-primary rounded-full font-extrabold"
+                >book a consult
+                <span class="bg-black text-white rounded-full p-2 px-3"
+                  ><i class="fa-solid fa-arrow-right -rotate-45"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown dropdown-left">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-sharp fa-solid fa-bars font-xl"></i>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li class="font-bold"><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Contact Us</a></li>
+            <li>
+              <a class="btn bg-primary rounded-full">Button</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero-header">
+        <div class="hero bg-base-200 min-h-screen">
+          <div class="hero-content text-center flex flex-col">
+            <div class="hero-banner">
+              <img src="assets/banner.png" alt="" />
+            </div>
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold">
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <button class="btn lightprimary">
+                Get Started
+                <span class="bg-primary rounded-full p-2 px-3"
+                  ><i class="fa-solid fa-arrow-right -rotate-45"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary: '#ABEF5F',
+            lightprimary: 'background: rgba(171, 239, 95, 0.5);',
+          },
+        },
+      },
+    };
+  </script>
+</html>
