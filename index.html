@@ -19,10 +19,10 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <header>
+  <body class="overflow-x-hidden">
+    <header class="bg-white">
       <div
-        class="navbar bg-base-100 flex justify-between items-center align-middle"
+        class="navbar bg-white flex justify-between items-center align-middle"
       >
         <div class="navbar-start">
           <a class="btn btn-ghost text-xl justify-between font-extrabold">
@@ -32,12 +32,13 @@
             Rinterio
           </a>
         </div>
-        <div class="w-96">
+        <div class="w-[32em]">
           <div class="navbar-center hidden lg:flex w-full absolute">
             <ul class="menu menu-horizontal px-1">
               <li class="font-bold"><a>Home</a></li>
               <li><a>Service</a></li>
               <li><a>Portfolio</a></li>
+              <li><a>Blog</a></li>
               <li><a>Contact Us</a></li>
             </ul>
             <div class="flex gap-1 py-1">
@@ -69,6 +70,7 @@
             <li class="font-bold"><a>Home</a></li>
             <li><a>Service</a></li>
             <li><a>Portfolio</a></li>
+            <li><a>Blog</a></li>
             <li><a>Contact Us</a></li>
             <li>
               <a class="btn bg-primary rounded-full">Button</a>
@@ -77,7 +79,7 @@
         </div>
       </div>
       <div class="hero-header">
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="hero bg-white min-h-screen">
           <div class="hero-content text-center flex flex-col">
             <div class="hero-banner">
               <img src="assets/banner.png" alt="" />
@@ -92,7 +94,7 @@
                 accents, and large windows that flood the space with natural
                 light.
               </p>
-              <button class="btn lightprimary">
+              <button class="btn bg-lightprimary rounded-full">
                 Get Started
                 <span class="bg-primary rounded-full p-2 px-3"
                   ><i class="fa-solid fa-arrow-right -rotate-45"></i
@@ -103,6 +105,96 @@
         </div>
       </div>
     </header>
+    <main>
+      <section
+        id="about"
+        class="bg-base-200 p-30 flex justify-center align-middle relative"
+      >
+        <img
+          src="assets/Vector.png"
+          class="absolute h-15 left-[20em] top-5 border-[3px] border-dashed border-gray-300 rounded-md p-5"
+          alt=""
+        />
+        <div class="about-container-left m-20">
+          <span class="bg-white rounded-full p-2 px-3">
+            <i class="fa-solid fa-arrow-right"></i>
+            About Us
+          </span>
+          <div class="pt-2">
+            <h1 class="font-extrabold text-3xl">
+              We design thoughtful, <br />
+              and liveable spaces.
+            </h1>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern
+              <br />sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <div class="about-us-cards">
+            <div
+              class="card card-side bg-base-100 shadow-xl w-[34em] h-40 my-10"
+            >
+              <figure class="p-6">
+                <img src="assets/commercial.png" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Commercial</h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl w-[34em] h-40">
+              <figure class="p-6">
+                <img src="assets/residential.png" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Residential</h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-container-right m-20">
+          <img src="assets/Rectangle.png" alt="" />
+        </div>
+      </section>
+      <section
+        id="about-us-2nd"
+        class="bg-base-200 p-30 flex justify-center align-middle text-center relative"
+      >
+        <div
+          class="stats-card-row flex gap-28 bg-white rounded-2xl px-20 py-8 shadow-md"
+        >
+          <div class="stats-card-info">
+            <i class="fa-solid fa-message text-5xl"></i>
+            <h2 class="pt-5 font-medium text text-6xl">235+</h2>
+            <p class="text-gray-500 font-semibold">Happy client reviews.</p>
+          </div>
+          <div class="stats-card-info">
+            <i class="fa-regular fa-building text-5xl"></i>
+            <h2 class="pt-5 font-medium text text-6xl">50+</h2>
+            <p class="text-gray-500 font-semibold">Work departments</p>
+          </div>
+          <div class="stats-card-info">
+            <i class="fa-solid fa-people-group text-5xl"></i>
+            <h2 class="pt-5 font-medium text text-6xl">30k+</h2>
+            <p class="text-gray-500 font-semibold">Our happy clients.</p>
+          </div>
+          <div class="stats-card-info">
+            <i class="fa-solid fa-user-group text-5xl"></i>
+            <h2 class="pt-5 font-medium text text-6xl">307+</h2>
+            <p class="text-gray-500 font-semibold">Staff memebers.</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
   <script>
     tailwind.config = {
@@ -111,7 +203,7 @@
           colors: {
             clifford: '#da373d',
             primary: '#ABEF5F',
-            lightprimary: 'background: rgba(171, 239, 95, 0.5);',
+            lightprimary: 'rgba(171, 239, 95, 0.5);',
           },
         },
       },
