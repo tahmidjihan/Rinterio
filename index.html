@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden flex flex-col justify-center align-middle">
     <header class="bg-white">
       <div
         class="navbar bg-white flex justify-between items-center align-middle"
@@ -108,11 +108,11 @@
     <main>
       <section
         id="about"
-        class="bg-base-200 p-30 flex justify-center align-middle relative"
+        class="bg-base-200 p-30 flex flex-col lg:flex-row justify-center align-middle relative"
       >
         <img
           src="assets/Vector.png"
-          class="absolute h-15 left-[20em] top-5 border-[3px] border-dashed border-gray-300 rounded-md p-5"
+          class="absolute h-15 left-10 lg:left-[20em] top-5 border-[3px] border-dashed border-gray-300 rounded-md p-5"
           alt=""
         />
         <div class="about-container-left m-20">
@@ -134,7 +134,7 @@
           </div>
           <div class="about-us-cards">
             <div
-              class="card card-side bg-base-100 shadow-xl w-[34em] h-40 my-10"
+              class="card card-side bg-base-100 shadow-xl lg:w-[34em] lg:h-40 my-10"
             >
               <figure class="p-6">
                 <img src="assets/commercial.png" />
@@ -147,7 +147,9 @@
                 </p>
               </div>
             </div>
-            <div class="card card-side bg-base-100 shadow-xl w-[34em] h-40">
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-[34em] lg:h-40"
+            >
               <figure class="p-6">
                 <img src="assets/residential.png" />
               </figure>
@@ -170,7 +172,7 @@
         class="bg-base-200 p-30 flex justify-center align-middle text-center relative"
       >
         <div
-          class="stats-card-row flex gap-28 bg-white rounded-2xl px-20 py-8 shadow-md"
+          class="stats-card-row flex-wrap flex gap-28 bg-white rounded-2xl px-20 py-8 shadow-md lg:m-auto m-28"
         >
           <div class="stats-card-info">
             <i class="fa-solid fa-message text-5xl"></i>
@@ -196,7 +198,7 @@
       </section>
       <section
         id="how"
-        class="text-center flex flex-col align-middle justify-center bg-base-200 py-28"
+        class="text-center flex flex-col align-middle justify-center bg-base-200 py-28 m-auto"
       >
         <span class="bg-white rounded-full p-2 px-3 m-10 w-48 mx-auto">
           <i class="fa-solid fa-arrow-right"></i>
@@ -210,7 +212,7 @@
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
-        <div class="how-cards flex gap-16 mx-auto my-10">
+        <div class="how-cards flex-wrap flex gap-16 mx-28 my-10 lg:mx-auto">
           <div
             class="card bg-red-300 text-primary-content text-black w-[275px]"
           >
