@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="overflow-x-hidden flex flex-col justify-center align-middle">
-    <header class="bg-white">
+  <body class="overflow-x-hidden">
+    <header class="bg-white overflow-x-hidden">
       <div
         class="navbar bg-white flex justify-between items-center align-middle"
       >
@@ -32,8 +32,8 @@
             Rinterio
           </a>
         </div>
-        <div class="w-[32em]">
-          <div class="navbar-center hidden lg:flex w-full absolute">
+        <div class="w-[100vw]">
+          <div class="navbar-end hidden lg:flex w-full absolute mx-5">
             <ul class="menu menu-horizontal px-1">
               <li class="font-bold"><a>Home</a></li>
               <li><a>Service</a></li>
@@ -115,7 +115,7 @@
           class="absolute h-15 left-10 lg:left-[20em] top-5 border-[3px] border-dashed border-gray-300 rounded-md p-5"
           alt=""
         />
-        <div class="about-container-left m-20">
+        <div class="about-container-left m-10 lg:m-20">
           <span class="bg-white rounded-full p-2 px-3">
             <i class="fa-solid fa-arrow-right"></i>
             About Us
@@ -134,10 +134,10 @@
           </div>
           <div class="about-us-cards">
             <div
-              class="card card-side bg-base-100 shadow-xl lg:w-[34em] lg:h-40 my-10"
+              class="card card-side bg-base-100 shadow-xl min-w-[20em] lg:w-[34em] lg:h-40 my-10"
             >
               <figure class="p-6">
-                <img src="assets/commercial.png" />
+                <img src="assets/commercial.png" class="w-[48px]" />
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Commercial</h2>
@@ -148,10 +148,10 @@
               </div>
             </div>
             <div
-              class="card card-side bg-base-100 shadow-xl lg:w-[34em] lg:h-40"
+              class="card card-side bg-base-100 shadow-xl min-w-[20em] lg:w-[34em] lg:h-40 my-10"
             >
               <figure class="p-6">
-                <img src="assets/residential.png" />
+                <img src="assets/residential.png" class="w-[48px]" />
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Residential</h2>
@@ -163,8 +163,10 @@
             </div>
           </div>
         </div>
-        <div class="about-container-right m-20">
-          <img src="assets/Rectangle.png" alt="" />
+        <div
+          class="about-container-right m-20 flex align-middle justify-center"
+        >
+          <img src="assets/Rectangle.png" class="min-w-96" alt="" />
         </div>
       </section>
       <section
@@ -172,24 +174,24 @@
         class="bg-base-200 p-30 flex justify-center align-middle text-center relative"
       >
         <div
-          class="stats-card-row flex-wrap flex gap-28 bg-white rounded-2xl px-20 py-8 shadow-md lg:m-auto m-28"
+          class="stats-card-row grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 bg-white rounded-2xl py-8 shadow-md lg:m-auto m-28 min-w-56"
         >
-          <div class="stats-card-info">
+          <div class="stats-card-info p-10">
             <i class="fa-solid fa-message text-5xl"></i>
             <h2 class="pt-5 font-medium text text-6xl">235+</h2>
             <p class="text-gray-500 font-semibold">Happy client reviews.</p>
           </div>
-          <div class="stats-card-info">
+          <div class="stats-card-info p-10">
             <i class="fa-regular fa-building text-5xl"></i>
             <h2 class="pt-5 font-medium text text-6xl">50+</h2>
             <p class="text-gray-500 font-semibold">Work departments</p>
           </div>
-          <div class="stats-card-info">
+          <div class="stats-card-info p-10">
             <i class="fa-solid fa-people-group text-5xl"></i>
             <h2 class="pt-5 font-medium text text-6xl">30k+</h2>
             <p class="text-gray-500 font-semibold">Our happy clients.</p>
           </div>
-          <div class="stats-card-info">
+          <div class="stats-card-info p-10">
             <i class="fa-solid fa-user-group text-5xl"></i>
             <h2 class="pt-5 font-medium text text-6xl">307+</h2>
             <p class="text-gray-500 font-semibold">Staff memebers.</p>
@@ -212,9 +214,11 @@
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
-        <div class="how-cards flex-wrap flex gap-16 mx-28 my-10 lg:mx-auto">
+        <div
+          class="how-cards flex-wrap flex gap-16 justify-center align-middle my-10"
+        >
           <div
-            class="card bg-red-300 text-primary-content text-black w-[275px]"
+            class="card bg-red-300 text-primary-content text-black w-[275px] text-start"
           >
             <div class="card-body">
               <div class="div-img">
@@ -229,7 +233,7 @@
           </div>
 
           <div
-            class="card bg-yellow-300 text-primary-content text-black w-[275px]"
+            class="card bg-yellow-300 text-primary-content text-black w-[275px] text-start"
           >
             <div class="card-body">
               <div class="div-img">
@@ -244,7 +248,7 @@
           </div>
 
           <div
-            class="card bg-green-300 text-primary-content text-black w-[275px]"
+            class="card bg-green-300 text-primary-content text-black w-[275px] text-start"
           >
             <div class="card-body">
               <div class="div-img">
@@ -259,7 +263,7 @@
           </div>
 
           <div
-            class="card bg-blue-300 text-primary-content text-black w-[275px]"
+            class="card bg-blue-300 text-primary-content text-black w-[275px] text-start"
           >
             <div class="card-body">
               <div class="div-img">
