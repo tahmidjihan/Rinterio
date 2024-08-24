@@ -309,9 +309,9 @@
           </p>
         </div>
         <div class="section-cards flex flex-col gap-6 mx-auto">
-          <div class="portfolio-row-1 flex gap-6">
+          <div class="portfolio-row-1 flex-col lg:flex-row flex gap-6">
             <div
-              class="card card-side bg-base-100 shadow-xl w-[772px] border-2 border-gray-200"
+              class="card card-side bg-base-100 shadow-xl lg:w-[772px] flex-col lg:flex-row w-[335px] border-2 border-gray-200"
             >
               <div>
                 <figure class="border-2 border-dashed border-gray-300 m-4">
@@ -339,27 +339,36 @@
               </div>
             </div>
             <div
-              class="card card-side bg-base-100 shadow-xl w-[374px] border-2 border-gray-200"
+              class="card card-side bg-base-100 shadow-xl lg:w-[374px] w-[335px] border-2 border-gray-200"
             >
-              <div>
+              <div class="mx-auto">
                 <figure class="border-2 border-dashed border-gray-300 m-4">
                   <img src="assets/img2.png" alt="Movie" class="rounded-xl" />
                 </figure>
               </div>
             </div>
-          </div>
-          <div class="portfolio-row-2 flex gap-6">
             <div
-              class="card card-side bg-base-100 shadow-xl w-[274px] border-2 border-gray-200"
+              class="card card-side bg-base-100 shadow-xl lg:w-[274px] w-[335px] border-2 border-gray-200 lg:hidden"
             >
-              <div>
+              <div class="mx-auto">
+                <figure class="border-2 border-dashed border-gray-300 m-4">
+                  <img src="assets/img5.png" class="rounded-xl" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-row-2 flex flex-col lg:flex-row gap-6">
+            <div
+              class="card card-side bg-base-100 shadow-xl md:w-[335px] w-[335px] border-2 border-gray-200"
+            >
+              <div class="mx-auto">
                 <figure class="border-2 border-dashed border-gray-300 m-4">
                   <img src="assets/img3.png" alt="Movie" class="rounded-xl" />
                 </figure>
               </div>
             </div>
             <div
-              class="card card-side bg-base-100 shadow-xl w-[573px] border-2 border-gray-200"
+              class="card card-side bg-base-100 shadow-xl lg:flex-row flex-col w-[335px] lg:w-[573px] border-2 border-gray-200"
             >
               <div>
                 <figure class="border-2 border-dashed border-gray-300 m-4">
@@ -384,11 +393,11 @@
               </div>
             </div>
             <div
-              class="card card-side bg-base-100 shadow-xl w-[274px] border-2 border-gray-200"
+              class="card card-side bg-base-100 shadow-xl lg:w-[274px] w-[335px] border-2 border-gray-200"
             >
-              <div>
+              <div class="mx-auto">
                 <figure class="border-2 border-dashed border-gray-300 m-4">
-                  <img src="assets/img5.png" alt="Movie" class="rounded-xl" />
+                  <img src="assets/img5.png" class="rounded-xl" />
                 </figure>
               </div>
             </div>
@@ -513,7 +522,7 @@
       </section>
       <section id="contact">
         <div
-          class="contact-body-content bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover bg-fixed py-20"
+          class="contact-body-content bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover py-20"
         >
           <div class="contact-header text-center">
             <span class="bg-lightprimary rounded-full p-2 px-3">
@@ -532,7 +541,7 @@
           <div class="contact-form flex flex-col justify-center align-middle">
             <form
               action=""
-              class="flex flex-col align-middle justify-center lg:w-[917px] sm:min-w-[700px] m-auto"
+              class="flex flex-col align-middle justify-center lg:w-[917px] min-w-[200px] m-auto"
             >
               <div class="row-form flex gap-5 mb-5 flex-col md:flex-row">
                 <input
